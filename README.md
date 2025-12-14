@@ -55,7 +55,6 @@ The dashboard is built using **Dash + Plotly**, making it suitable for **deploym
 
 ## Repository Structure
 - Poland-Bankruptcy-Prediction/
-  - │
   - ├── app.py                         # Dash application
   - ├── final_model.pkl                # Trained ML model
   - ├── dashboard_artifacts.pkl        # Test set & evaluation artifacts
