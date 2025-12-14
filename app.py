@@ -1,8 +1,3 @@
-# app.py
-# Dash app: Bankruptcy prediction for Polish firms
-# Includes: EDA, metrics, feature importance, classification report table,
-# and safe prediction UI
-
 import json
 import pickle
 from pathlib import Path
@@ -80,7 +75,7 @@ TOP_FEATURES = [
 ]
 
 # ==============================
-# Classification report (table)
+# Classification report
 # ==============================
 
 report_dict = classification_report(
