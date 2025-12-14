@@ -1,7 +1,6 @@
 # Poland Bankruptcy Prediction Dashboard
 
-An end-to-end **machine learning and data visualization project** that predicts the bankruptcy risk of Polish firms using financial indicators.  
-The project combines **exploratory data analysis (EDA)**, **model evaluation**, and an **interactive Dash dashboard** for real-time predictions.
+An end-to-end **machine learning and data visualization project** that predicts the bankruptcy risk of Polish firms using financial indicators. The project combines **exploratory data analysis (EDA)**, **model evaluation**, and an **interactive Dash dashboard** for real-time predictions.
 
 ---
 
