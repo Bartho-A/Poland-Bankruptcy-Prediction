@@ -1,3 +1,4 @@
+import gzip
 import json
 import pickle
 from pathlib import Path
@@ -9,10 +10,10 @@ from dash import Dash, dcc, html, Input, Output, State, dash_table
 from sklearn.metrics import confusion_matrix, classification_report
 
 # ==============================
-# Paths (portable, deployment-safe)
+# Paths 
 # ==============================
 BASE_DIR = Path(__file__).parent
-DATA_PATH = BASE_DIR / "poland_bankruptcy_data.json"
+DATA_PATH = BASE_DIR / "poland_bankruptcy_data.json.gz"
 MODEL_PATH = BASE_DIR / "final_model.pkl"
 ARTIFACTS_PATH = BASE_DIR / "dashboard_artifacts.pkl"
 
@@ -20,8 +21,9 @@ ARTIFACTS_PATH = BASE_DIR / "dashboard_artifacts.pkl"
 # Load and wrangle data
 # ==============================
 
-def wrangle(json_path):
-    with open(json_path, "r", encoding="utf-8") as f:
+def wrangle(json_gz_path):
+    
+    with gzip.open(json_gz_path, "rt", encoding="utf-8") as f:
         poland_data = json.load(f)
 
     df = pd.DataFrame(poland_data)
