@@ -186,6 +186,7 @@ fig_feat_imp.update_layout(yaxis={"categoryorder": "total ascending"})
 # ==============================
 
 app = Dash(__name__)
+server = app.server 
 
 app.layout = html.Div(
     [
