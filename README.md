@@ -54,14 +54,14 @@ The dashboard is built using **Dash + Plotly**, making it suitable for **deploym
 ---
 
 ## Repository Structure
-Poland-Bankruptcy-Prediction/
-- │
-- ├── app.py                         # Dash application
-- ├── final_model.pkl                # Trained ML model
-- ├── dashboard_artifacts.pkl        # Test set & evaluation artifacts
-- ├── poland_bankruptcy_data.json    # Raw dataset
-- ├── requirements.txt               # Python dependencies
-- └── README.md                      # Project documentation
+- Poland-Bankruptcy-Prediction/
+  - │
+  - ├── app.py                         # Dash application
+  - ├── final_model.pkl                # Trained ML model
+  - ├── dashboard_artifacts.pkl        # Test set & evaluation artifacts
+  - ├── poland_bankruptcy_data.json    # Raw dataset
+  - ├── requirements.txt               # Python dependencies
+  - └── README.md                      # Project documentation
 
 ---
 
@@ -71,15 +71,22 @@ Poland-Bankruptcy-Prediction/
 ```bash
 git clone https://github.com/Bartho-A/Poland-Bankruptcy-Prediction.git
 cd Poland-Bankruptcy-Prediction
-
+```
 ## Create and activate a virtual environment
+```bash
 python -m venv .venv
 source .venv/bin/activate   # macOS / Linux
 .venv\Scripts\activate      # Windows
+```
 
 ## Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ## Run App
+```bash
 python app.py
+```
+2025 Bartholomeow Aobe
 
