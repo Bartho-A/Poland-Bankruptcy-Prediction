@@ -1,11 +1,11 @@
-# 🇵🇱 Poland Bankruptcy Prediction Dashboard
+# Poland Bankruptcy Prediction Dashboard
 
 An end-to-end **machine learning and data visualization project** that predicts the bankruptcy risk of Polish firms using financial indicators.  
 The project combines **exploratory data analysis (EDA)**, **model evaluation**, and an **interactive Dash dashboard** for real-time predictions.
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This application:
 
@@ -18,7 +18,7 @@ The dashboard is built using **Dash + Plotly**, making it suitable for **deploym
 
 ---
 
-## 🧠 Model Highlights
+## Model Highlights
 
 - **Algorithm**: Tuned Gradient Boosting Classifier
 - **Imbalance handling**: Addressed during training (SMOTE / resampling)
@@ -55,13 +55,13 @@ The dashboard is built using **Dash + Plotly**, making it suitable for **deploym
 
 ## Repository Structure
 Poland-Bankruptcy-Prediction/
-│
-├── app.py                         # Dash application
-├── final_model.pkl                # Trained ML model
-├── dashboard_artifacts.pkl        # Test set & evaluation artifacts
-├── poland_bankruptcy_data.json    # Raw dataset
-├── requirements.txt               # Python dependencies
-└── README.md                      # Project documentation
+- │
+- ├── app.py                         # Dash application
+- ├── final_model.pkl                # Trained ML model
+- ├── dashboard_artifacts.pkl        # Test set & evaluation artifacts
+- ├── poland_bankruptcy_data.json    # Raw dataset
+- ├── requirements.txt               # Python dependencies
+- └── README.md                      # Project documentation
 
 ---
 
@@ -82,3 +82,4 @@ pip install -r requirements.txt
 
 ## Run App
 python app.py
+
