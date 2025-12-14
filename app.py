@@ -22,16 +22,14 @@ ARTIFACTS_PATH = BASE_DIR / "dashboard_artifacts.pkl"
 # ==============================
 
 def wrangle(json_gz_path):
+    import gzip
+    import json
     
     with gzip.open(json_gz_path, "rt", encoding="utf-8") as f:
-        poland_data = json.load(f)
+        data = json.load(f)  
 
-    df = pd.DataFrame(poland_data)
-
-    # Rename Attr1..Attr64 -> feat_1..feat_64, class -> bankrupt
-    rename_map = {f"Attr{i}": f"feat_{i}" for i in range(1, 65)}
-    rename_map["class"] = "bankrupt"
-    df = df.rename(columns=rename_map)
+    # Load nested data from 'data' key
+    df = pd.DataFrame.from_dict(data['data']).set_index('company_id')
 
     return df
 
