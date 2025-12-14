@@ -13,7 +13,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 # Paths 
 # ==============================
 BASE_DIR = Path(__file__).parent
-DATA_PATH = BASE_DIR / "poland_bankruptcy-data-2009.json.gz"
+DATA_PATH = BASE_DIR / "poland-bankruptcy-data-2009.json.gz"
 MODEL_PATH = BASE_DIR / "final_model.pkl"
 ARTIFACTS_PATH = BASE_DIR / "dashboard_artifacts.pkl"
 
